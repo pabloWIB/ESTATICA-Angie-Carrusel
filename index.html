@@ -3,8 +3,6 @@
 <head>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-	<script src="https://riseugcacademy.com/cdn/shop/t/2/assets/global.js?v=54939145903281508041697188542"
-		defer="defer"></script>
 	<link rel="stylesheet" href="CSS/styles.css" />
 	<title>Carruseles</title>
 </head>
@@ -63,127 +61,48 @@
 			</div>
 		</div>
 	</div>
+	<div id="shopify-section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c"
+	class="shopify-section-carrusel">
+	<link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet" type="text/css" media="all" />
 
-	<br><br><br><br><br>
-
-	<div id="shopify-section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c" class="shopify-section-carrusel">
-		<link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet" type="text/css" media="all" />
-
-		<section id="section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c" class="ce-section__padding">
-			<div class="ce-inner__wrapper">
-				<header class="ce-carousel__column ce-carousel__header">
-				</header>
-				<div class="ce-carousel__column">
-					<ul class="main-carousel flickity-enabled is-draggable">
-						<li class="carousel-cell">
-							<figure class="ce-video__item--wrapper">
-								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus obcaecati facilis omnis quas expedita, asperiores blanditiis neque cum tempora in, eaque, molestias unde vitae dolores deleniti. Quae nisi eveniet quos!</p>
-							</figure>
-						</li>
-						<li class="carousel-cell">
-							<figure class="ce-video__item--wrapper" data-src="https://vimeo.com">
-							</figure>
-						</li>
-						<li class="carousel-cell">
-							<figure class="ce-video__item--wrapper" data-src="https://vimeo.com">
-							</figure>
-						</li>
-						<li class="carousel-cell">
-							<figure class="ce-video__item--wrapper" data-src="https://vimeo.com">
-							</figure>
-						</li>
-						<li class="carousel-cell">
-							<figure class="ce-video__item--wrapper" data-src="https://vimeo.com">
-							</figure>
-						</li>
-					</ul>
-				</div>
+	<section id="section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c"
+		class="ce-section__padding">
+		<div class="ce-inner__wrapper">
+			<header class="ce-carousel__column ce-carousel__header">
+			</header>
+			<div class="ce-carousel__column">
+				<ul class="main-carousel flickity-enabled is-draggable">
+					<li class="carousel-cell">
+						<figure class="ce-video__item--wrapper" src="IMG/Fondo.mp4">
+						</figure>
+					</li>
+					<li class="carousel-cell">
+						<figure class="ce-video__item--wrapper" src="IMG/Fondo.mp4">
+						</figure>
+					</li>
+					<li class="carousel-cell">
+						<figure class="ce-video__item--wrapper" src="IMG/Fondo.mp4">
+						</figure>
+					</li>
+					<li class="carousel-cell">
+						<figure class="ce-video__item--wrapper" src="IMG/Fondo.mp4">
+						</figure>
+					</li>
+					<li class="carousel-cell">
+						<figure class="ce-video__item--wrapper" src="IMG/Fondo.mp4">
+						</figure>
+					</li>
+					<li class="carousel-cell">
+						<figure class="ce-video__item--wrapper" src="IMG/Fondo.mp4">
+						</figure>
+					</li>
+				</ul>
 			</div>
-		</section>
-	</div>
-
-	<br><br><br><br><br>
-
-
-
-	<script>
-		(function () {
-			window.flickityLoaded = window.flickityLoaded || {};
-
-			window.loadVideos = window.loadVideos || function (e) {
-				document.addEventListener("DOMContentLoaded", () => {
-					const createVideoElement = (wrapper) => {
-						const video = document.createElement("video");
-						video.controls = true;
-						video.autoplay = true;
-						video.muted = true;
-						video.loop = true;
-						video.playsInline = true;
-						video.classList.add("ce-video__item");
-
-						const source = document.createElement("source");
-						source.src = wrapper.getAttribute("data-src");
-						source.type = "video/mp4";
-						video.appendChild(source);
-						wrapper.appendChild(video);
-					};
-
-					document.querySelectorAll(`#${e} .ce-video__item--wrapper`).forEach(createVideoElement);
-					console.log("Videos displayed");
-				});
-			};
-
-			window.loadFlickityScript = window.loadFlickityScript || function () {
-				return new Promise((resolve, reject) => {
-					const script = document.createElement("script");
-					script.src = "https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.pkgd.min.js";
-					script.onload = () => resolve();
-					script.onerror = (error) => reject(error);
-					document.body.appendChild(script);
-				});
-			};
-
-			window.initializeFlickity = window.initializeFlickity || function (id) {
-				document.querySelectorAll(".main-carousel").forEach(carousel => {
-					const carouselId = carousel.closest("[id]").id;
-					if (!window.flickityLoaded[carouselId]) {
-						new Flickity(carousel, {
-							cellAlign: "left",
-							contain: true,
-							prevNextButtons: true,
-							draggable: true,
-							pageDots: false,
-							freeScroll: true,
-							wrapAround: true,
-							arrowShape: {
-								x0: 20,
-								x1: 60,
-								y1: 40,
-								x2: 60,
-								y2: 35,
-								x3: 25
-							}
-						});
-						carousel.style.visibility = "visible";
-						window.flickityLoaded[carouselId] = true;
-					}
-				});
-			};
-
-			const carousels = document.querySelectorAll(".main-carousel");
-			carousels.forEach(carousel => {
-				const carouselId = carousel.closest("[id]").id;
-				loadFlickityScript()
-					.then(() => {
-						initializeFlickity(carouselId);
-					})
-					.catch(error => console.error("Error loading Flickity script:", error));
-
-				loadVideos(carouselId);
-			});
-		})();
-
-	</script>
+		</div>
+	</section>
+</div>
+<script src="https://riseugcacademy.com/cdn/shop/t/2/assets/global.js?v=54939145903281508041697188542" defer="defer"></script>
+<script src="JS/script.js">
+</script>
 </body>
-
 </html>

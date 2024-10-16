@@ -51,26 +51,22 @@
   padding: 1.75rem 0rem;
 }
 
-#section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c
-  .ce-carousel__header {
+#section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .ce-carousel__header {
   text-align: center;
 }
 
-#section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c
-  .flickity-slider {
+#section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .flickity-slider {
   left: 18px !important;
 }
 
-#section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c
-  .main-carousel {
+#section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .main-carousel {
   visibility: hidden;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-#section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c
-  .carousel-cell {
+#section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .carousel-cell {
   width: 210px;
   height: auto;
   margin-left: 18px;
@@ -78,28 +74,25 @@
   overflow: hidden;
 }
 
-#section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c
-  .flickity-button {
+#section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .flickity-button {
   position: absolute;
   background: hsla(0, 0%, 0%, 0.75);
   border: none;
   color: white;
 }
 
-#section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c
-  .flickity-button:focus {
+#section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .flickity-button:focus {
   outline: none;
   background-color: #000000;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
-#section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c
-  .ce-video__item--wrapper {
+#section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .ce-video__item--wrapper {
   height: 374px;
+  position: relative;
 }
 
-#section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c
-  .ce-video__item {
+#section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .ce-video__item {
   max-height: 100%;
   position: absolute;
   top: 50%;
@@ -117,25 +110,21 @@
     padding-left: 50px;
   }
 
-  #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c
-    .flickity-slider {
+  #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .flickity-slider {
     left: 0px !important;
   }
 
-  #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c
-    .carousel-cell {
+  #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .carousel-cell {
     width: 254px;
     margin-left: 22px;
     margin-top: 0;
   }
 
-  #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c
-    .ce-video__item--wrapper {
+  #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .ce-video__item--wrapper {
     height: 450px;
   }
 
-  #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c
-    .ce-video__item {
+  #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .ce-video__item {
     min-height: 104%;
     height: 450px;
     object-fit: contain;
@@ -143,36 +132,29 @@
 }
 
 @media (min-width: 1024px) {
-  #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c
-    .flickity-slider {
+  #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .flickity-slider {
     left: 0 !important;
   }
 
-  #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c
-    .ce-carousel__header {
+  #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .ce-carousel__header {
     text-align: left;
   }
 
-  #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c
-    .ce-inner__wrapper {
+  #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .ce-inner__wrapper {
     max-width: 640px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 25% 75%;
-    display: grid;
-    grid-template-columns: 0 100%;
     margin-left: 0;
     width: 100%;
     max-width: 100%;
   }
 
-  #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c
-    .ce-carousel__column {
+  #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .ce-carousel__column {
     height: 100%;
   }
 
-  #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c
-    header.ce-carousel__column {
+  #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c header.ce-carousel__column {
     display: flex;
     flex-direction: column;
     justify-content: center;

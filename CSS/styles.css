@@ -87,6 +87,7 @@
 
 #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .ce-video__item--wrapper {
   height: 374px;
+  position: relative;
 }
 
 #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .ce-video__item {
@@ -137,8 +138,6 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 25% 75%;
-    display: grid;
-    grid-template-columns: 0 100%;
     margin-left: 0;
     width: 100%;
     max-width: 100%;
