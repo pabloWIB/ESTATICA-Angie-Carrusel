@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+        .contenedorCarruseles {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1440px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+}
+.contenedorCarruseles > div {
+  flex: 1;
+  padding: 0.75rem 0rem;
+  background-color: #f5f3ee;
+  border-radius: 23px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1), 0 8px 40px rgba(0, 0, 0, 0.1);
+  border: 4px solid rgba(206, 184, 225, 0);
+}
+.contenedorCarruseles > div > div {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.contenedorCarruseles > div > div > :nth-child(1) {
+  width: 100%;
+  margin: 0 auto;
+  align-self: center;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.contenedorCarruseles > div > div > :nth-child(1) video, .contenedorCarruseles > div > div > :nth-child(1) iframe {
+  width: 100%;
+  border-radius: 23px;
+}
+
+@media (max-width: 975px) {
+  .contenedorCarruseles {
+    flex-flow: column wrap;
+    gap: 1.25rem;
+  }
+  .contenedorCarruseles > div {
+    padding: 0.5rem 0rem;
+  }
+  .contenedorCarruseles > div > div {
+    gap: 0.75rem;
+  }
+  .contenedorCarruseles > div > div > :nth-child(1) {
+    width: 100%;
+    margin: 0 auto;
+    align-self: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedorCarruseles > div > div > :nth-child(1) video, .contenedorCarruseles > div > div > :nth-child(1) iframe {
+    width: 60%;
+    border-radius: 23px;
+  }
+}
+.shopify-section-carrusel {
+  background-color: #f5f3ee;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1), 0 8px 40px rgba(0, 0, 0, 0.1);
+  padding: 1.75rem 0rem;
+}
+    </style>
+</head>
+<body>
+
+    <div class="contenedorCarruseles">
+		<div>
+			<div>
+				<div>
+                    
+				</div>
+				<div>
+					<h3>Olga</h3>
+					<p> "Es increíble como estoy consiguiendo marcas al poco de empezar con el UGC Master Pro, estoy encantada con los cursos de Gina"</p>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div>
+				<div>
+					<video src="IMG/Fondo.mp4" controls loop ></video>
+				</div>
+				<div>
+					<h3>Título</h3>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur corporis possimus facere
+						modi dignissimos sunt non, tenetur voluptatum assumenda soluta, fugit deleniti, laudantium ab
+						cum recusandae aliquid ex quis voluptates.</p>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div>
+				<div>
+					<video src="IMG/Fondo.mp4" controls loop ></video>
+				</div>
+				<div>
+					<h3>Título</h3>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur corporis possimus facere
+						modi dignissimos sunt non, tenetur voluptatum assumenda soluta, fugit deleniti, laudantium ab
+						cum recusandae aliquid ex quis voluptates.</p>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div>
+				<div>
+					<video src="IMG/Fondo.mp4" controls loop ></video>
+				</div>
+				<div>
+					<h3>Yago</h3>
+					<p>"Hice el curso UGC Boost de iniciación al UGC y me ha parecido de 10 y súper ameno de seguir!"</p>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+</body>
+</html>
