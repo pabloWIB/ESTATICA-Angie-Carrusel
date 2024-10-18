@@ -5,32 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet" type="text/css" media="all"/>
     <style>
-        .shopify-section-carrusel {
+
+        .ce-inner__wrapper {
+            width: 100%;
             background-color: #f5f3ee;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1), 0 8px 40px rgba(0, 0, 0, 0.1);
             padding: 1.75rem 0rem;
         }
 
-        #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .ce-carousel__header {
+        .ce-carousel__header {
             text-align: center;
         }
 
-        #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .flickity-slider {
+        .flickity-slider {
             left: 18px !important;
         }
 
-        #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .main-carousel {
-            visibility: hidden;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .carousel-cell {
+        .carousel-cell {
             width: 210px;
             height: auto;
             margin-left: 18px;
@@ -44,19 +39,13 @@
             border: none;
             color: white;
         }
-
-        #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .flickity-button:focus {
-            outline: none;
-            background-color: #000000;
-            box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-        }
-
-        #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .ce-video__item--wrapper {
+      
+        .ce-video__item--wrapper {
             height: 374px;
             position: relative;
         }
 
-        #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .ce-video__item {
+        .ce-video__item {
             max-height: 100%;
             position: absolute;
             top: 50%;
@@ -70,26 +59,23 @@
             background: transparent;
         }
 
+        .ce-carousel__column {
+            height: 100%;
+            width: 100%;
+        }
+
         @media screen and (min-width: 641px) {
-            #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c.ce-section__padding {
-                padding-left: 50px;
-            }
-
-            #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .flickity-slider {
-                left: 0px !important;
-            }
-
-            #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .carousel-cell {
+            .carousel-cell {
                 width: 254px;
                 margin-left: 22px;
                 margin-top: 0;
             }
 
-            #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .ce-video__item--wrapper {
+            .ce-video__item--wrapper {
                 height: 450px;
             }
 
-            #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .ce-video__item {
+            .ce-video__item {
                 min-height: 104%;
                 height: 450px;
                 -o-object-fit: contain;
@@ -97,110 +83,76 @@
             }
         }
 
-        @media (min-width: 1024px) {
-            #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .flickity-slider {
-                left: 0 !important;
-            }
-
-            #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .ce-carousel__header {
-                text-align: left;
-            }
-
-            #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .ce-inner__wrapper {
-                max-width: 640px;
-                margin: 0 auto;
-                display: grid;
-                grid-template-columns: 25% 75%;
-                margin-left: 0;
-                width: 100%;
-                max-width: 100%;
-            }
-
-            #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c .ce-carousel__column {
-                height: 100%;
-            }
-
-            #section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c header.ce-carousel__column {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-        }
     </style>
 
 </head>
 
 <body>
 
-    <div id="shopify-section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c"
-        class="shopify-section-carrusel">
-        <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet" type="text/css" media="all" />
 
-        <section id="section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c"
-            class="ce-section__padding">
-            <div class="ce-inner__wrapper">
-                <header class="ce-carousel__column ce-carousel__header">
-                </header>
-                <div class="ce-carousel__column">
-                    <ul class="main-carousel flickity-enabled is-draggable">
-                        <li class="carousel-cell">
-                            <div style="padding:177.78% 0 0 0;position:relative;">
-                                <iframe
-                                    src="https://player.vimeo.com/video/1020491624?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                                    style="position:absolute;top:0;left:0;width:100%;height:100%;" title="1">
-                                </iframe>
-                            </div>
-                        </li>
-                        <li class="carousel-cell">
-                            <div style="padding:177.78% 0 0 0;position:relative;">
-                                <iframe
-                                    src="https://player.vimeo.com/video/1020491670?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                                    style="position:absolute;top:0;left:0;width:100%;height:100%;" title="2">
-                                </iframe>
-                            </div>
-                        </li>
-                        <li class="carousel-cell">
-                            <div style="padding:177.78% 0 0 0;position:relative;">
-                                <iframe
-                                    src="https://player.vimeo.com/video/1020491698?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                                    style="position:absolute;top:0;left:0;width:100%;height:100%;" title="3">
-                                </iframe>
-                            </div>
-                        </li>
-                        <li class="carousel-cell">
-                            <div style="padding:177.78% 0 0 0;position:relative;">
-                                <iframe
-                                    src="https://player.vimeo.com/video/1020491734?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                                    style="position:absolute;top:0;left:0;width:100%;height:100%;" title="4">
-                                </iframe>
-                            </div>
-                        </li>
-                        <li class="carousel-cell">
-                            <div style="padding:177.78% 0 0 0;position:relative;">
-                                <iframe
-                                    src="https://player.vimeo.com/video/1020491756?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                                    style="position:absolute;top:0;left:0;width:100%;height:100%;" title="5">
-                                </iframe>
-                            </div>
-                        </li>
-                        <li class="carousel-cell">
-                            <div style="padding:177.78% 0 0 0;position:relative;">
-                                <iframe
-                                    src="https://player.vimeo.com/video/1020491782?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                                    style="position:absolute;top:0;left:0;width:100%;height:100%;" title="6">
-                                </iframe>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+    <div id="section-template--18075152154890__502c45e1-de59-482d-8736-6a02805aee8c" class="ce-inner__wrapper">
+        <header class="ce-carousel__column ce-carousel__header">
+        </header>
+        <div class="ce-carousel__column">
+
+            <ul class="main-carousel flickity-enabled is-draggable">
+
+                <li class="carousel-cell">
+                    <div style="padding:177.78% 0 0 0;position:relative;">
+                        <iframe
+                            src="https://player.vimeo.com/video/1020491624?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" title="1">
+                        </iframe>
+                    </div>
+                </li>
+                <li class="carousel-cell">
+                    <div style="padding:177.78% 0 0 0;position:relative;">
+                        <iframe
+                            src="https://player.vimeo.com/video/1020491670?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" title="2">
+                        </iframe>
+                    </div>
+                </li>
+                <li class="carousel-cell">
+                    <div style="padding:177.78% 0 0 0;position:relative;">
+                        <iframe
+                            src="https://player.vimeo.com/video/1020491698?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" title="3">
+                        </iframe>
+                    </div>
+                </li>
+                <li class="carousel-cell">
+                    <div style="padding:177.78% 0 0 0;position:relative;">
+                        <iframe
+                            src="https://player.vimeo.com/video/1020491734?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" title="4">
+                        </iframe>
+                    </div>
+                </li>
+                <li class="carousel-cell">
+                    <div style="padding:177.78% 0 0 0;position:relative;">
+                        <iframe
+                            src="https://player.vimeo.com/video/1020491756?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" title="5">
+                        </iframe>
+                    </div>
+                </li>
+                <li class="carousel-cell">
+                    <div style="padding:177.78% 0 0 0;position:relative;">
+                        <iframe
+                            src="https://player.vimeo.com/video/1020491782?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" title="6">
+                        </iframe>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 
 
