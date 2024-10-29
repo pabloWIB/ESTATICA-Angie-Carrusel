@@ -1,7 +1,0 @@
-Terminar página de incio
-Poner required a algunos compos de crear canción, los id llevarán datos a la pantalla de previsualiazción
-Revisar forma de pago
-Organizar Footer emial
-Revisar animaciones
-Organizar selects
-Organizar ID's de Carruseles en crear canción.
