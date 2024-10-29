@@ -4,3 +4,4 @@ Revisar forma de pago
 Organizar Footer emial
 Revisar animaciones
 Organizar selects
+Organizar ID's de Carruseles en crear canción.
