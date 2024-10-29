@@ -288,32 +288,28 @@ input#subimosSpotify:checked + *::before {
   position: relative;
   box-shadow: 0px 0px 6.5px 0px #b8b8b8;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   max-width: 1240px;
   padding-bottom: 1.75rem;
   border-radius: 25px;
   background: white;
-  scale: 1;
 }
 .brand_slider_main .container .swiper {
   width: 100%;
   background-color: rgb(255, 255, 255);
-  border-radius: 25px;
+  border-radius: 25px 25px 0px 0px;
 }
 .brand_slider_main .container .swiper .text-buttons {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  justify-content: space-between;
   width: 95.5%;
   margin: 0 auto;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.brand_slider_main .container .swiper .text-buttons > :nth-child(1) {
-  display: flex;
-  flex-flow: row wrap;
-  flex: 1;
-}
+
 .brand_slider_main .container .swiper .text-buttons .buttons {
   position: relative;
   display: flex;
@@ -358,92 +354,25 @@ input#subimosSpotify:checked + *::before {
 .brand_slider_main .container .swiper .swiper-wrapper .specialBoxSlider > :nth-child(1) {
   margin: 0 auto;
   width: 90%;
+  cursor: pointer;
+
 }
 .brand_slider_main .container .swiper .swiper-wrapper .specialBoxSlider > :nth-child(1) > :nth-child(1) img {
   width: 100%;
   max-width: 250px;
   border-radius: 12px;
+  cursor: pointer;
 }
 .brand_slider_main .container .swiper .swiper-wrapper .specialBoxSlider > :nth-child(1) p {
   cursor: default;
   font-size: 15px;
+  cursor: pointer;
 }
 .brand_slider_main .container .swiper .swiper-wrapper .specialBoxSlider > :nth-child(1) p::-moz-selection {
   background: none;
 }
 .brand_slider_main .container .swiper .swiper-wrapper .specialBoxSlider > :nth-child(1) p::selection {
   background: none;
-}
-
-@media (max-width: 900px) {
-  .brand_slider_main {
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
-  .brand_slider_main .container .swiper {
-    width: 100%;
-  }
-  .brand_slider_main .container .swiper .text-buttons {
-    width: 95.65%;
-    padding-top: 0.35rem;
-    padding-bottom: 0.35rem;
-  }
-  .brand_slider_main .container .swiper .text-buttons .buttons {
-    height: auto;
-    max-width: 90px;
-  }
-  .brand_slider_main .container .swiper .text-buttons .buttons .swiper-button-next:after,
-  .brand_slider_main .container .swiper .text-buttons .buttons .swiper-button-prev:after {
-    font-size: 15px !important;
-    color: #3d3d3d;
-  }
-  .brand_slider_main .container .swiper .brand_item {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    justify-content: center;
-    gap: 0.1em;
-  }
-  .brand_slider_main .container .swiper .brand_item img {
-    max-width: 100%;
-    border-radius: 50%;
-    margin: auto;
-  }
-  .brand_slider_main .container .swiper .swiper-wrapper {
-    padding-left: 0.75rem;
-  }
-  .brand_slider_main .container .swiper .swiper-wrapper .swiper-slide .specialBoxSlider {
-    padding: 0.5rem 0rem;
-    cursor: pointer;
-  }
-  .brand_slider_main .container .swiper .swiper-wrapper p {
-    font-size: 14px;
-  }
-}
-@media (max-width: 500px) {
-  .brand_slider_main {
-    margin-top: 1.25rem;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-  }
-  .brand_slider_main .container .swiper {
-    width: 100%;
-  }
-  .brand_slider_main .container .swiper .text-buttons {
-    width: 94.5%;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-  }
-  .brand_slider_main .container .swiper .text-buttons .buttons {
-    height: auto;
-    max-width: 85px;
-  }
-  .brand_slider_main .container .swiper .text-buttons .buttons .swiper-button-next:after,
-  .brand_slider_main .container .swiper .text-buttons .buttons .swiper-button-prev:after {
-    font-size: 14px !important;
-    color: #3d3d3d;
-  }
 }
 
 .swiper-slide input[type="radio"] {
@@ -464,27 +393,7 @@ input#subimosSpotify:checked + *::before {
 
 /* Aplicar estilos cuando el radio está seleccionado */
 .swiper-slide input[type="radio"]:checked + .specialBoxSlider {
-  background: rgba(0, 123, 255, 1);
-  transform: scale(1.05);
+  background: #d06b81;
+  color: white;
   transition: all 0.3s ease;
-  border: 2px solid #007bff;
-}
-
-/* Mantener los estilos existentes */
-.custom-radio img {
-  width: 100%;
-  height: auto;
-}
-
-.custom-radio p {
-  text-align: center;
-  margin-top: 8px;
-}
-
-/* Estilos adicionales para .specialBoxSlider */
-.specialBoxSlider {
-  padding: 10px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
 }
